@@ -7,7 +7,7 @@ const cors=require('cors');
 const app=express();
 
 //Database Connection
-const database='mongodb+srv://saptarshi:hellocrypto@cryptocluster.ebmbg.mongodb.net/?retryWrites=true&w=majority';
+const database='mongodb+srv://saptarshi:hellocrypto123@cluster0.rdser.mongodb.net/?retryWrites=true&w=majority';
 
 
 //Body Parser Middleware
