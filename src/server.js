@@ -33,7 +33,7 @@ mongoose.connect(database).then(()=>{
         res.send('Crypto Database Connected');
     });
 
-    app.get('/crypto',(req,res)=>{
+    app.get('/api',(req,res)=>{
         res.send('Crypto Details here ');
     });
     //Get all Transactions list of a Particular user with respect to the user id
