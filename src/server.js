@@ -47,7 +47,7 @@ mongoose.connect(database).then(()=>{
 
     //Create or Update a Transaction
 
-    app.post('/api/create/', async (req,res)=>{
+    app.post('/api/create', async (req,res)=>{
 
         await CryptoNote.deleteOne({id:req.params.id});
 
