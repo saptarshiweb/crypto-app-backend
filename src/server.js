@@ -38,6 +38,10 @@ mongoose.connect(database).then(()=>{
     });
     //Get all Transactions list of a Particular user with respect to the user id
 
+    app.get('/api/docs',(req,res)=>{
+        res.send('Routes- /api/create , /api/list/:userid ');
+    });
+
     app.get('/api/list/:userid',async (req,res)=>{
         var value=await CryptoNote.find({userid: req.params.userid});
         res.json(value);
